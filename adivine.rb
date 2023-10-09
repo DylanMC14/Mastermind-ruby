@@ -7,13 +7,14 @@ class Adivine
 
     i = 0
     def initialize
-        @colors = Colors.new
+        @color = Colors.new
     end
 
     def position
-        
-        for i in i..@colors do
-            puts @colors.random_colors
+        colors_randoms = @color.random_colors
+
+        colors_randoms.each_with_index do |dato,index|
+        puts "#{dato} :: #{index}"
         end
 
     end
