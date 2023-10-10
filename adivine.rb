@@ -1,11 +1,8 @@
 require_relative 'colors'
 
- 
-
 class Adivine
     attr_accessor :color
 
-    i = 0
     def initialize
         @color = Colors.new
     end
@@ -22,4 +19,4 @@ class Adivine
 end
 
 adivine = Adivine.new
-puts "#{adivine.position}"
+# puts "#{adivine.position}"
