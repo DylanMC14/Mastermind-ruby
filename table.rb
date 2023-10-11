@@ -12,7 +12,7 @@ class Table
         @table_board.each_with_index {
             |guess, index| puts " | ".colorize(:magenta) + " ---- " + " | ".colorize(:magenta) + " .... " + " | ".colorize(:magenta)
         }
-        puts "_____________________".colorize(:magenta)
+        puts "_____________________\n".colorize(:magenta)
     end
 
     def welcome
@@ -29,7 +29,16 @@ class Table
         puts "****************************************************************".colorize(:red)
     end
 
+    def computer
+        blue = "blue"
+        green = "green"
+        yellow = "yellow"
+        red = "red"
+
+        colors = ["blue", "green", "yellow", "red"]
+        
+        random = colors.sample(4)
+    end
+
 end
-table = Table.new
-table.welcome
-table.table_board()
+
